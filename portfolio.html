@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Digital Agency</title>
+    <meta
+      name="description"
+      content="Explore our portfolio of successful digital projects including websites, mobile apps, and marketing campaigns."
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+  </head>
+  <body class="main-layout">
+    <!-- loader -->
+    <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+
+    <!-- sidebar -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="dropdown-sidebar">
+        <a href="#" class="dropdown-toggle">Services</a>
+        <div class="dropdown-content">
+          <a href="web-development.html">Web Development</a>
+          <a href="digital-marketing.html">Digital Marketing</a>
+          <a href="mobile-apps.html">Mobile Apps</a>
+          <a href="logo-design.html">Logo Design</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="seo.html">SEO Services</a>
+        </div>
+      </div>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- header -->
+    <header>
+      <!-- header inner -->
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col logo_section">
+              <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+              </div>
+            </div>
+            <div class="menu-button-wrapper">
+              <button class="openbtn" onclick="openNav()">
+                <img src="images/menu_icon.png" alt="#" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- page header -->
+    <section class="page_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page_header_content">
+              <h1>Our Portfolio</h1>
+              <p class="text-white">
+                Showcasing our best work and successful digital transformations
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio filter -->
+    <div class="portfolio_filter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="filter_buttons">
+              <button class="filter_btn active" data-filter="all">
+                All Projects
+              </button>
+              <button class="filter_btn" data-filter="web">
+                Web Development
+              </button>
+              <button class="filter_btn" data-filter="mobile">
+                Mobile Apps
+              </button>
+              <button class="filter_btn" data-filter="marketing">
+                Digital Marketing
+              </button>
+              <button class="filter_btn" data-filter="branding">
+                Branding
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio grid -->
+    <div class="portfolio_grid">
+      <div class="container">
+        <div class="row" id="portfolioContainer">
+          <!-- Web Development Projects -->
+          <div class="col-md-4 portfolio_item web">
+            <div class="portfolio_box">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&auto=format&fit=crop&q=60"
+                  alt="E-commerce Platform"
+                />
+              </figure>
+              <div class="portfolio_overlay">
+                <div class="portfolio_content">
+                  <h3>TechStore E-commerce</h3>
+                  <p>
+                    Modern e-commerce platform with payment integration and
+                    inventory management
+                  </p>
+                  <span class="portfolio_category">Web Development</span>
+                  <div class="portfolio_stats">
+                    <span
+                      ><i class="fa fa-chart-line"></i> 300% Sales
+                      Increase</span
+                    >
+                    <span><i class="fa fa-users"></i> 50K+ Users</span>
+                  </div>
+                  <a href="#" class="view_project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 portfolio_item web">
+            <div class="portfolio_box">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60"
+                  alt="Corporate Website"
+                />
+              </figure>
+              <div class="portfolio_overlay">
+                <div class="portfolio_content">
+                  <h3>FinanceFlow Corporate</h3>
+                  <p>
+                    Professional corporate website with CMS and client portal
+                  </p>
+                  <span class="portfolio_category">Web Development</span>
+                  <div class="portfolio_stats">
+                    <span><i class="fa fa-clock-o"></i> 2 Weeks Delivery</span>
+                    <span><i class="fa fa-mobile"></i> 100% Responsive</span>
+                  </div>
+                  <a href="#" class="view_project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile App Projects -->
+          <div class="col-md-4 portfolio_item mobile">
+            <div class="portfolio_box">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&auto=format&fit=crop&q=60"
+                  alt="Fitness App"
+                />
+              </figure>
+              <div class="portfolio_overlay">
+                <div class="portfolio_content">
+                  <h3>FitTracker Pro</h3>
+                  <p>Comprehensive fitness tracking app with social features</p>
+                  <span class="portfolio_category">Mobile App</span>
+                  <div class="portfolio_stats">
+                    <span><i class="fa fa-star"></i> 4.8 App Store Rating</span>
+                    <span><i class="fa fa-download"></i> 100K+ Downloads</span>
+                  </div>
+                  <a href="#" class="view_project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 portfolio_item mobile">
+            <div class="portfolio_box">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&auto=format&fit=crop&q=60"
+                  alt="Food Delivery App"
+                />
+              </figure>
+              <div class="portfolio_overlay">
+                <div class="portfolio_content">
+                  <h3>QuickEats Delivery</h3>
+                  <p>On-demand food delivery app with real-time tracking</p>
+                  <span class="portfolio_category">Mobile App</span>
+                  <div class="portfolio_stats">
+                    <span><i class="fa fa-truck"></i> Real-time Tracking</span>
+                    <span
+                      ><i class="fa fa-credit-card"></i> Multiple Payments</span
+                    >
+                  </div>
+                  <a href="#" class="view_project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Marketing Projects -->
+          <div class="col-md-4 portfolio_item marketing">
+            <div class="portfolio_box">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&auto=format&fit=crop&q=60"
+                  alt="SEO Campaign"
+                />
+              </figure>
+              <div class="portfolio_overlay">
+                <div class="portfolio_content">
+                  <h3>LegalFirm SEO Campaign</h3>
+                  <p>
+                    Comprehensive SEO strategy that dominated local search
+                    results
+                  </p>
+                  <span class="portfolio_category">Digital Marketing</span>
+                  <div class="portfolio_stats">
+                    <span><i class="fa fa-search"></i> #1 Google Ranking</span>
+                    <span
+                      ><i class="fa fa-line-chart"></i> 400% Traffic
+                      Increase</span
+                    >
+                  </div>
+                  <a href="#" class="view_project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Branding Projects -->
+          <div class="col-md-4 portfolio_item branding">
+            <div class="portfolio_box">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&auto=format&fit=crop&q=60"
+                  alt="Brand Identity"
+                />
+              </figure>
+              <div class="portfolio_overlay">
+                <div class="portfolio_content">
+                  <h3>GreenTech Branding</h3>
+                  <p>
+                    Complete brand identity design for sustainable technology
+                    startup
+                  </p>
+                  <span class="portfolio_category">Branding</span>
+                  <div class="portfolio_stats">
+                    <span
+                      ><i class="fa fa-eye"></i> 200% Brand Recognition</span
+                    >
+                    <span
+                      ><i class="fa fa-trophy"></i> Design Award Winner</span
+                    >
+                  </div>
+                  <a href="#" class="view_project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 portfolio_item web">
+            <div class="portfolio_box">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&auto=format&fit=crop&q=60"
+                  alt="Restaurant Website"
+                />
+              </figure>
+              <div class="portfolio_overlay">
+                <div class="portfolio_content">
+                  <h3>Bella Vista Restaurant</h3>
+                  <p>
+                    Elegant restaurant website with online reservation system
+                  </p>
+                  <span class="portfolio_category">Web Development</span>
+                  <div class="portfolio_stats">
+                    <span
+                      ><i class="fa fa-calendar"></i> Online Reservations</span
+                    >
+                    <span><i class="fa fa-utensils"></i> Menu Management</span>
+                  </div>
+                  <a href="#" class="view_project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 portfolio_item marketing">
+            <div class="portfolio_box">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&auto=format&fit=crop&q=60"
+                  alt="Social Media Campaign"
+                />
+              </figure>
+              <div class="portfolio_overlay">
+                <div class="portfolio_content">
+                  <h3>Fashion Brand Social Campaign</h3>
+                  <p>
+                    Viral social media campaign that increased brand awareness
+                  </p>
+                  <span class="portfolio_category">Digital Marketing</span>
+                  <div class="portfolio_stats">
+                    <span><i class="fa fa-heart"></i> 1M+ Engagements</span>
+                    <span><i class="fa fa-share"></i> 500K Shares</span>
+                  </div>
+                  <a href="#" class="view_project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 portfolio_item mobile">
+            <div class="portfolio_box">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&auto=format&fit=crop&q=60"
+                  alt="Banking App"
+                />
+              </figure>
+              <div class="portfolio_overlay">
+                <div class="portfolio_content">
+                  <h3>SecureBank Mobile</h3>
+                  <p>Secure banking app with biometric authentication</p>
+                  <span class="portfolio_category">Mobile App</span>
+                  <div class="portfolio_stats">
+                    <span
+                      ><i class="fa fa-shield"></i> Bank-level Security</span
+                    >
+                    <span
+                      ><i class="fa fa-fingerprint"></i> Biometric Auth</span
+                    >
+                  </div>
+                  <a href="#" class="view_project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- call to action -->
+    <div class="portfolio_cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="cta_content">
+              <h2>Ready to Start Your Project?</h2>
+              <p>
+                Let's create something amazing together. Get a free consultation
+                and custom quote.
+              </p>
+              <a href="contact.html" class="cta_btn">Start Your Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+   <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Quick Links</h3>
+              <ul class="footer_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="fid_box">
+                <h3>Contact Info</h3>
+                <ul class="location_icon">
+                  <li>
+                    <a href="mailto:services@streamartisan.com">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:services@streamartisan.com">services@streamartisan.com</a>
+                  </li>
+                  <li>
+                    <strong>UK Office:</strong><br />
+                    <a href="tel:+447716487602">
+                      <i class="fa fa-phone" aria-hidden="true"></i> +44 771 648 7602
+                    </a><br />
+                    Office No.50A, 5 The Shires Old<br />
+                    Bedford Road Luton, England LU27QA
+                  </li>
+                  <li>
+                    <strong>USA Office:</strong><br />
+                    <a href="tel:+13323731192">
+                      <i class="fa fa-phone" aria-hidden="true"></i> +1 332 373 1192
+                    </a><br />
+                    Stream Artisan Corporation 418<br />
+                    Broadway #5981 Albany, NY, 12207
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="fid_box">
+                <h3>Newsletter</h3>
+                <form class="news_form">
+                  <input
+                    class="letter_form"
+                    placeholder="Enter your email"
+                    type="email"
+                    name="Email"
+                  />
+                  <button class="sumbit">Subscribe</button>
+                </form>
+                <ul class="social_icon">
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  © 2024 Stream Artisan. All Rights Reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+
+      // Portfolio filtering
+      document.querySelectorAll(".filter_btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          // Remove active class from all buttons
+          document
+            .querySelectorAll(".filter_btn")
+            .forEach((b) => b.classList.remove("active"));
+          // Add active class to clicked button
+          this.classList.add("active");
+
+          const filter = this.getAttribute("data-filter");
+          const items = document.querySelectorAll(".portfolio_item");
+
+          items.forEach((item) => {
+            if (filter === "all" || item.classList.contains(filter)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - Digital Agency</title>
+    <meta
+      name="description"
+      content="Get in touch with our digital agency. Free consultation, custom quotes, and 24/7 support available."
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+  </head>
+  <body class="main-layout contact_page">
+    <!-- loader -->
+    <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+
+    <!-- sidebar -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="dropdown-sidebar">
+        <a href="#" class="dropdown-toggle">Services</a>
+        <div class="dropdown-content">
+          <a href="web-development.html">Web Development</a>
+          <a href="digital-marketing.html">Digital Marketing</a>
+          <a href="mobile-apps.html">Mobile Apps</a>
+          <a href="logo-design.html">Logo Design</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="seo.html">SEO Services</a>
+        </div>
+      </div>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- header -->
+    <header>
+      <!-- header inner -->
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col logo_section">
+              <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+              </div>
+            </div>
+            <div class="menu-button-wrapper">
+              <button class="openbtn" onclick="openNav()">
+                <img src="images/menu_icon.png" alt="#" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Contact Header - replace with page header -->
+    <div class="page_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page_header_content">
+              <h1>Contact Us</h1>
+              <p class="text-white">
+                Ready to transform your digital presence? Let's discuss your
+                project and bring your vision to life
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact info section -->
+    <div class="contact_info_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="contact_info_box">
+              <i class="fa fa-map-marker"></i>
+              <h3>Visit Our Office</h3>
+              <p>
+                123 Digital Street<br />Tech City, TC 12345<br />United States
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact_info_box">
+              <i class="fa fa-phone"></i>
+              <h3>Call Us</h3>
+              <p>
+                Main: (+1) 555-123-4567<br />Support: (+1) 555-123-4568<br />Mon-Fri:
+                9AM-6PM EST
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact_info_box">
+              <i class="fa fa-envelope"></i>
+              <h3>Email Us</h3>
+              <p>
+                General: info@digitalagency.com<br />Support:
+                support@digitalagency.com<br />Sales: sales@digitalagency.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact form section -->
+    <div class="contact_form_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="contact_form">
+              <h2>Get A Free Quote</h2>
+              <p>
+                Tell us about your project and we'll get back to you within 24
+                hours with a custom proposal.
+              </p>
+              <form id="contactForm" class="main_form">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="name">Full Name *</label>
+                      <input
+                        class="contactus"
+                        placeholder="Enter your full name"
+                        type="text"
+                        name="name"
+                        id="name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email Address *</label>
+                      <input
+                        class="contactus"
+                        placeholder="your.email@example.com"
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="phone">Phone Number</label>
+                      <input
+                        class="contactus"
+                        placeholder="+1 (555) 123-4567"
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="company">Company Name</label>
+                      <input
+                        class="contactus"
+                        placeholder="Your company name"
+                        type="text"
+                        name="company"
+                        id="company"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="service">Service Needed *</label>
+                      <select
+                        class="contactus"
+                        name="service"
+                        id="service"
+                        required
+                      >
+                        <option value="">Choose a service...</option>
+                        <option value="web-development">
+                          🌐 Web Development
+                        </option>
+                        <option value="mobile-apps">
+                          📱 Mobile App Development
+                        </option>
+                        <option value="digital-marketing">
+                          📈 Digital Marketing
+                        </option>
+                        <option value="seo">🔍 SEO Services</option>
+                        <option value="logo-design">🎨 Logo & Branding</option>
+                        <option value="video-editing">🎬 Video Editing</option>
+                        <option value="consultation">
+                          💡 Free Consultation
+                        </option>
+                        <option value="other">🔧 Other Services</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="budget">Project Budget</label>
+                      <select class="contactus" name="budget" id="budget">
+                        <option value="">Select budget range...</option>
+                        <option value="under-5k">💰 Under $5,000</option>
+                        <option value="5k-10k">💰💰 $5,000 - $10,000</option>
+                        <option value="10k-25k">
+                          💰💰💰 $10,000 - $25,000
+                        </option>
+                        <option value="25k-50k">
+                          💰💰💰💰 $25,000 - $50,000
+                        </option>
+                        <option value="50k-plus">💰💰💰💰💰 $50,000+</option>
+                        <option value="discuss">💬 Let's Discuss</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="timeline">Project Timeline</label>
+                      <select class="contactus" name="timeline" id="timeline">
+                        <option value="">
+                          When do you need this completed?
+                        </option>
+                        <option value="asap">🚀 ASAP (Rush Job)</option>
+                        <option value="1-month">📅 Within 1 Month</option>
+                        <option value="2-3-months">📅 2-3 Months</option>
+                        <option value="3-6-months">📅 3-6 Months</option>
+                        <option value="6-plus-months">📅 6+ Months</option>
+                        <option value="flexible">🕐 Flexible Timeline</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="message">Project Details *</label>
+                      <textarea
+                        class="contactusmess"
+                        placeholder="Tell us about your project requirements, goals, target audience, and any specific features you need. The more details you provide, the better we can help you!"
+                        name="message"
+                        id="message"
+                        rows="6"
+                        required
+                      ></textarea>
+                      <small class="form-text"
+                        >Minimum 50 characters required</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="form-check-group">
+                        <label class="form-check">
+                          <input
+                            type="checkbox"
+                            name="newsletter"
+                            value="yes"
+                          />
+                          <span class="checkmark"></span>
+                          Subscribe to our newsletter for digital marketing tips
+                          and industry insights
+                        </label>
+                        <label class="form-check">
+                          <input
+                            type="checkbox"
+                            name="terms"
+                            value="yes"
+                            required
+                          />
+                          <span class="checkmark"></span>
+                          I agree to the
+                          <a href="#" target="_blank">Terms of Service</a> and
+                          <a href="#" target="_blank">Privacy Policy</a> *
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-submit">
+                      <button type="submit" class="send_btn">
+                        <i class="fa fa-paper-plane"></i>
+                        Send My Request
+                      </button>
+                      <p class="form-note">
+                        <i class="fa fa-shield"></i>
+                        Your information is secure and will never be shared with
+                        third parties
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact_sidebar">
+              <div class="contact_widget">
+                <h3>Why Choose Us?</h3>
+                <ul class="contact_features">
+                  <li><i class="fa fa-check"></i> Free consultation & quote</li>
+                  <li><i class="fa fa-check"></i> 24-hour response time</li>
+                  <li><i class="fa fa-check"></i> 5+ years of experience</li>
+                  <li><i class="fa fa-check"></i> 200+ successful projects</li>
+                  <li><i class="fa fa-check"></i> 98% client satisfaction</li>
+                  <li><i class="fa fa-check"></i> Ongoing support included</li>
+                </ul>
+              </div>
+
+              <div class="contact_widget">
+                <h3>What Happens Next?</h3>
+                <div class="process_steps">
+                  <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                      <h5>We Review Your Request</h5>
+                      <p>Our team analyzes your requirements within 2 hours</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                      <h5>Free Consultation Call</h5>
+                      <p>We schedule a 30-min call to discuss your project</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                      <h5>Custom Proposal</h5>
+                      <p>Receive a detailed proposal within 24 hours</p>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                      <h5>Project Kickoff</h5>
+                      <p>Start your project with our expert team</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact_widget">
+                <h3>Follow Us</h3>
+                <ul class="social_links">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- map section -->
+    <div class="map_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map_container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459418!3d40.74844097932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sus!4v1635959655180!5m2!1sen!2sus"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+   <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Quick Links</h3>
+              <ul class="footer_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="fid_box">
+                <h3>Contact Info</h3>
+                <ul class="location_icon">
+                  <li>
+                    <a href="mailto:services@streamartisan.com">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:services@streamartisan.com">services@streamartisan.com</a>
+                  </li>
+                  <li>
+                    <strong>UK Office:</strong><br />
+                    <a href="tel:+447716487602">
+                      <i class="fa fa-phone" aria-hidden="true"></i> +44 771 648 7602
+                    </a><br />
+                    Office No.50A, 5 The Shires Old<br />
+                    Bedford Road Luton, England LU27QA
+                  </li>
+                  <li>
+                    <strong>USA Office:</strong><br />
+                    <a href="tel:+13323731192">
+                      <i class="fa fa-phone" aria-hidden="true"></i> +1 332 373 1192
+                    </a><br />
+                    Stream Artisan Corporation 418<br />
+                    Broadway #5981 Albany, NY, 12207
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="fid_box">
+                <h3>Newsletter</h3>
+                <form class="news_form">
+                  <input
+                    class="letter_form"
+                    placeholder="Enter your email"
+                    type="email"
+                    name="Email"
+                  />
+                  <button class="sumbit">Subscribe</button>
+                </form>
+                <ul class="social_icon">
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>© 2024 Stream Artisan. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+
+      // Contact form handling
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "Thank you for your message! We will get back to you within 24 hours."
+          );
+        });
+    </script>
+  </body>
+</html>
+
+
