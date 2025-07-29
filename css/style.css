@@ -3667,9 +3667,58 @@ button {
 }
 
 .portfolio_cta {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #37139a, #03cafc);
-  text-align: center;
+  background: #fff;
+  color: #37139a;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.portfolio_cta:hover {
+  background: #03cafc;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Enhanced Banner Section **/
+.banner_main {
+  background: linear-gradient(
+      135deg,
+      rgba(55, 19, 154, 0.9),
+      rgba(36, 0, 130, 0.8)
+    ),
+    url(../images/banner.jpg);
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 85vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner_main .carousel {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.banner_main .carousel-inner {
+  height: 100%;
+}
+
+.banner_main .carousel-item {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta_content h2 {

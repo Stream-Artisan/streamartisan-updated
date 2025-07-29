@@ -144,8 +144,16 @@
         margin-top: 0px !important;
     }
     .banner_main {
-        padding: 249px 0px 0px 0px;
-        min-height: 750px;
+        padding: 0;
+        min-height: 100vh;
+    }
+    
+    .banner_main .carousel {
+        height: 80vh;
+    }
+    
+    .banner_main .carousel-item {
+        height: 80vh;
     }
     .text-bg h1 {
         font-size: 36px;
@@ -216,6 +224,32 @@
     }
     .right_bottun {
         margin-top: -105px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .banner_main {
+        min-height: 82vh;
+    }
+    
+    .banner_main .carousel {
+        height: 82vh;
+    }
+    
+    .banner_main .carousel-item {
+        height: 82vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner_main {
+        min-height: 85vh;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .banner_main {
+        min-height: 85vh;
     }
 }
 
