@@ -48,24 +48,51 @@
     </div>
 
     <!-- header -->
-    <header>
-      <!-- header inner -->
-      <div class="header">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col logo_section">
-              <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-              </div>
-            </div>
-            <div class="menu-button-wrapper">
-              <button class="openbtn" onclick="openNav()">
-                <img src="images/menu_icon.png" alt="#" />
-              </button>
-            </div>
+      <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Stream Artisan" class="logo-img">
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown">
+                  Services
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="web-development.html">Web Development</a>
+                  <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+                  <a class="dropdown-item" href="mobile-apps.html">Mobile Apps</a>
+                  <a class="dropdown-item" href="logo-design.html">Logo Design</a>
+                  <a class="dropdown-item" href="video-editing.html">Video Editing</a>
+                  <a class="dropdown-item" href="seo.html">SEO Services</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-quote" href="#contact">Get Quote</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <!-- page header -->
