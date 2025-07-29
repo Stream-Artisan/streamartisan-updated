@@ -20,7 +20,35 @@ $(function () {
 		$('[data-toggle="tooltip"]').tooltip();
 	});
 	
+	/* Navbar Hide/Show on Scroll
+	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 	
+	let lastScrollTop = 0;
+	let navbar = $('.navbar');
+	
+	$(window).scroll(function() {
+		let scrollTop = $(this).scrollTop();
+		
+		if (scrollTop === 0) {
+			// At the top of the page - show navbar
+			navbar.removeClass('navbar-hidden').addClass('navbar-visible');
+		} else if (scrollTop > lastScrollTop && scrollTop > 100) {
+			// Scrolling down - hide navbar
+			navbar.removeClass('navbar-visible').addClass('navbar-hidden');
+		} else if (scrollTop < lastScrollTop) {
+			// Scrolling up - show navbar
+			navbar.removeClass('navbar-hidden').addClass('navbar-visible');
+		}
+		
+		// Add scrolled class for styling
+		if (scrollTop > 50) {
+			navbar.addClass('scrolled');
+		} else {
+			navbar.removeClass('scrolled');
+		}
+		
+		lastScrollTop = scrollTop;
+	});
 	
 	/* Mouseover
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */

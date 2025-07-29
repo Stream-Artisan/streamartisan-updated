@@ -2248,6 +2248,171 @@ button {
   border-radius: 15px;
   padding: 30px;
   margin-bottom: 30px;
+}
+
+/* Modern Header & Navbar Styles */
+.navbar {
+     background: rgba(26, 32, 44, 0.95) !important;
+     backdrop-filter: blur(20px);
+     padding: 15px 0;
+     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 1000;
+     transform: translateY(0);
+}
+
+.navbar.navbar-hidden {
+     transform: translateY(-100%);
+     opacity: 0;
+}
+
+.navbar.navbar-visible {
+     transform: translateY(0);
+     opacity: 1;
+}
+
+.navbar.scrolled {
+     background: rgba(26, 32, 44, 0.98) !important;
+     padding: 10px 0;
+     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+     padding: 0;
+}
+
+.logo-img {
+     height: 50px;
+     width: auto;
+     transition: all 0.3s ease;
+}
+
+.navbar.scrolled .logo-img {
+     height: 40px;
+}
+
+.navbar-nav .nav-link {
+     color: #fff !important;
+     font-weight: 600;
+     font-size: 16px;
+     padding: 12px 20px !important;
+     margin: 0 5px;
+     border-radius: 25px;
+     transition: all 0.3s ease;
+     position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+     color: #03cafc !important;
+     background: rgba(3, 202, 252, 0.1);
+     transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+     color: #03cafc !important;
+     background: rgba(3, 202, 252, 0.15);
+}
+
+/* Services Dropdown */
+.dropdown-menu {
+     background: rgba(26, 32, 44, 0.95);
+     backdrop-filter: blur(20px);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     border-radius: 15px;
+     padding: 15px 0;
+     margin-top: 10px;
+     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+     color: #fff !important;
+     padding: 12px 25px;
+     font-weight: 500;
+     transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+     background: rgba(3, 202, 252, 0.1) !important;
+     color: #03cafc !important;
+     transform: translateX(5px);
+}
+
+/* Get Quote Button */
+.btn-quote {
+     background: linear-gradient(135deg, #37139a, #03cafc) !important;
+     color: #fff !important;
+     border-radius: 25px !important;
+     padding: 12px 25px !important;
+     margin-left: 15px !important;
+     font-weight: 700 !important;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+}
+
+.btn-quote:hover {
+     background: linear-gradient(135deg, #03cafc, #37139a) !important;
+     transform: translateY(-3px) !important;
+     box-shadow: 0 10px 25px rgba(3, 202, 252, 0.3) !important;
+}
+
+/* Mobile Navbar */
+.navbar-toggler {
+     border: none;
+     padding: 8px 12px;
+     border-radius: 8px;
+     background: rgba(3, 202, 252, 0.1);
+}
+
+.navbar-toggler:focus {
+     box-shadow: none;
+}
+
+.navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2803, 202, 252, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+     .navbar-collapse {
+          background: rgba(26, 32, 44, 0.98);
+          margin-top: 15px;
+          padding: 20px;
+          border-radius: 15px;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+     }
+     
+     .navbar-nav .nav-link {
+          margin: 5px 0;
+          text-align: center;
+     }
+     
+     .btn-quote {
+          margin-left: 0 !important;
+          margin-top: 10px !important;
+          text-align: center;
+     }
+     
+     .dropdown-menu {
+          background: rgba(55, 19, 154, 0.1);
+          border: none;
+          box-shadow: none;
+          margin-top: 0;
+     }
+}
+
+/* Adjust banner for fixed navbar */
+.banner_main {
+     padding-top: 0;
+}
+
+@media (max-width: 768px) {
+     .banner_main {
+          padding-top: 0;
+     }
+}
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   position: relative;
