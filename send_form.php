@@ -6,7 +6,10 @@ header('Access-Control-Allow-Headers: Content-Type');
 
 // Simple configuration
 $to_email = 'services@streamartisan.com';
-$from_email = 'noreply@streamartisan.com';
+$from_email = 'noreply@streamartisan.com'; // Must be YOUR domain, not external
+
+// If you don't have noreply@streamartisan.com set up, use:
+// $from_email = 'services@streamartisan.com';
 
 // Simple functions
 function sanitize_input($data) {
@@ -18,6 +21,12 @@ function validate_email($email) {
 }
 
 function send_email($to, $subject, $message, $headers) {
+    // Add more headers for better delivery
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+    $headers .= "X-Priority: 3\r\n";
+    
     return mail($to, $subject, $message, $headers);
 }
 
@@ -83,4 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo json_encode(['success' => false, 'message' => 'Invalid request method']);
 }
 ?>
+
+
+
 
