@@ -89,3 +89,45 @@ $(function () {
 
 
 });
+$(document).ready(function() {
+  // Desktop hover functionality
+  if (window.innerWidth > 991) {
+    $('.dropdown').hover(
+      function() {
+        $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
+      },
+      function() {
+        $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
+      }
+    );
+  }
+  
+  // Mobile click functionality
+  if (window.innerWidth <= 991) {
+    $('.dropdown-toggle').click(function(e) {
+      e.preventDefault();
+      $(this).next('.dropdown-menu').slideToggle(200);
+    });
+  }
+  
+  // Handle window resize
+  $(window).resize(function() {
+    if (window.innerWidth > 991) {
+      $('.dropdown-menu').hide();
+      $('.dropdown').off('click').hover(
+        function() {
+          $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
+        },
+        function() {
+          $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
+        }
+      );
+    } else {
+      $('.dropdown').off('hover');
+      $('.dropdown-toggle').click(function(e) {
+        e.preventDefault();
+        $(this).next('.dropdown-menu').slideToggle(200);
+      });
+    }
+  });
+});
