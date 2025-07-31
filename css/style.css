@@ -2448,20 +2448,8 @@ button {
     font-size: 1rem;
   }
 }
-  --font-weight-extrabold: 800;
   
-  /* Typography Scale */
-  --text-xs: 12px;
-  --text-sm: 14px;
-  --text-base: 16px;
-  --text-lg: 18px;
-  --text-xl: 20px;
-  --text-2xl: 24px;
-  --text-3xl: 30px;
-  --text-4xl: 36px;
-  --text-5xl: 48px;
-  --text-6xl: 60px;
-}
+
 
 /* Override existing typography with consistent system */
 body {
@@ -2523,13 +2511,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--text-sm) !important;
   font-weight: var(--font-weight-normal) !important;
 }
-  box-shadow: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  transform: translateY(0);
-}
+
 
 .navbar.navbar-hidden {
   transform: translateY(-100%);
@@ -2734,8 +2716,6 @@ img.loaded {
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
 }
-     padding: 0;
-}
 
 .logo-img {
   height: 35px; /* Reduced from 50px */
@@ -2743,6 +2723,92 @@ img.loaded {
   transition: all 0.3s ease;
 }
 
+/* Remove problematic CSS variable overrides */
+/* Keep only essential font consistency without breaking existing styles */
+
+/* Restore visibility for all content */
+* {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix text visibility issues */
+.text-bg h1,
+.text-bg span,
+.titlepage h2,
+.we_box h3,
+.portfolio_content h3,
+.hero-description,
+.about p,
+.service_content p,
+.footer p,
+.footer h3 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: inherit !important;
+}
+
+/* Restore banner text */
+.banner_main .text-bg {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.banner_main .text-bg h1 {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+.banner_main .text-bg span {
+  color: #03cafc !important;
+  opacity: 1 !important;
+}
+
+/* Fix navigation visibility */
+.navbar,
+.navbar-nav,
+.nav-link {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix about section */
+.about .titlepage h2,
+.about .titlepage p {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: inherit !important;
+}
+
+/* Fix services section */
+.we_do .we_box {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix footer */
+.footer {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.footer * {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Remove any problematic transforms or animations */
+.logo-carousel-bg {
+  opacity: 0.25 !important;
+}
+
+/* Ensure carousel content is visible */
+.carousel-inner,
+.carousel-item,
+.carousel-caption {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .navbar.scrolled .logo-img {
   height: 30px; /* Reduced from 40px */
 }
@@ -3194,7 +3260,8 @@ img.loaded {
 
 /* Responsive Design */
 @media (max-width: 991px) {
-  .navbar-collapse {
+  .navbar-collapse {  
+
     background: rgba(26, 32, 44, 0.98);
     margin-top: 15px;
     padding: 20px;

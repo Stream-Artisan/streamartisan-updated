@@ -131,3 +131,23 @@ $(document).ready(function() {
     }
   });
 });
+// Add immediate visibility fix
+$(document).ready(function() {
+  // Force show all content immediately
+  $('*').css({
+    'opacity': '1',
+    'visibility': 'visible'
+  });
+  
+  // Specifically fix banner content
+  $('.text-bg, .text-bg h1, .text-bg span, .hero-description').css({
+    'opacity': '1',
+    'visibility': 'visible'
+  });
+  
+  // Fix navigation
+  $('.navbar, .navbar-nav, .nav-link').css({
+    'opacity': '1',
+    'visibility': 'visible'
+  });
+});
