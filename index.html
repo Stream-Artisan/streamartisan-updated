@@ -53,10 +53,9 @@
     <div id="mySidepanel" class="sidepanel">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <!-- <a href="approach.html">Our Approach</a> -->
+      <a href="about.html">About</a>
       <div class="dropdown-sidebar">
-        <a href="#" class="dropdown-toggle">Services</a>
+        <a href="services.html" class="dropdown-toggle">Services</a>
         <div class="dropdown-content">
           <a href="web-development.html">Web Development</a>
           <a href="digital-marketing.html">Digital Marketing</a>
@@ -67,8 +66,6 @@
         </div>
       </div>
       <a href="portfolio.html">Portfolio</a>
-      <!-- <a href="team.html">Our Team</a>
-         <a href="testimonials.html">Testimonials</a> -->
       <a href="contact.html">Contact Us</a>
     </div>
     <!-- header -->
@@ -76,13 +73,20 @@
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Stream Artisan" class="logo-img">
+            <!-- Try these one by one -->
+            <img src="./images/logo.png" alt="Stream Artisan" class="logo-img" />
+      
           </a>
-          
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          
+
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -92,15 +96,31 @@
                 <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                >
                   Services
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="web-development.html">Web Development</a>
-                  <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
-                  <a class="dropdown-item" href="mobile-apps.html">Mobile Apps</a>
-                  <a class="dropdown-item" href="logo-design.html">Logo Design</a>
-                  <a class="dropdown-item" href="video-editing.html">Video Editing</a>
+                  <a class="dropdown-item" href="web-development.html"
+                    >Web Development</a
+                  >
+                  <a class="dropdown-item" href="digital-marketing.html"
+                    >Digital Marketing</a
+                  >
+                  <a class="dropdown-item" href="mobile-apps.html"
+                    >Mobile Apps</a
+                  >
+                  <a class="dropdown-item" href="logo-design.html"
+                    >Logo Design</a
+                  >
+                  <a class="dropdown-item" href="video-editing.html"
+                    >Video Editing</a
+                  >
                   <a class="dropdown-item" href="seo.html">SEO Services</a>
                 </div>
               </li>
@@ -279,7 +299,8 @@
                       >Start Your Project</a
                     >
                     <a class="read_more secondary-btn" href="#about"
-                      >View <br> Our Work</a
+                      >View <br />
+                      Our Work</a
                     >
                   </div>
                   <div class="hero-stats">
@@ -450,7 +471,8 @@
                            </div> -->
                   <div class="hero-buttons">
                     <a class="read_more primary-btn" href="#contact"
-                      >Design <br> My Brand</a
+                      >Design <br />
+                      My Brand</a
                     >
                     <a class="read_more secondary-btn" href="#main_tabs"
                       >Creative Portfolio</a
@@ -695,127 +717,45 @@
         <div class="row">
           <div class="col-md-12">
             <div class="main_tabs_wrapper">
-              <ul
-                class="nav nav-tabs main-nav-tabs"
-                id="mainTabs"
-                role="tablist"
-              >
+              <ul class="nav nav-tabs main-nav-tabs" id="mainTabs" role="tablist">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    id="services-main-tab"
-                    data-toggle="tab"
-                    href="#services-main"
-                    role="tab"
-                    >Our Services</a
-                  >
+                  <a class="nav-link active" id="services-main-tab" data-toggle="tab" href="#services-main" role="tab">Our Services</a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="portfolio-main-tab"
-                    data-toggle="tab"
-                    href="#portfolio-main"
-                    role="tab"
-                    >Our Portfolio</a
-                  >
+                  <a class="nav-link" id="portfolio-main-tab" data-toggle="tab" href="#portfolio-main" role="tab">Our Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="packages-main-tab"
-                    data-toggle="tab"
-                    href="#packages-main"
-                    role="tab"
-                    >Our Packages</a
-                  >
+                  <a class="nav-link" id="packages-main-tab" data-toggle="tab" href="#packages-main" role="tab">Our Packages</a>
                 </li>
               </ul>
 
               <div class="tab-content main-tab-content" id="mainTabContent">
                 <!-- Services Tab Content -->
-                <div
-                  class="tab-pane fade show active"
-                  id="services-main"
-                  role="tabpanel"
-                >
+                <div class="tab-pane fade show active" id="services-main" role="tabpanel">
                   <div class="services_sub_tabs">
-                    <ul
-                      class="nav nav-tabs sub-nav-tabs"
-                      id="servicesTabs"
-                      role="tablist"
-                    >
+                    <ul class="nav nav-tabs sub-nav-tabs" id="servicesTabs" role="tablist">
                       <li class="nav-item">
-                        <a
-                          class="nav-link active"
-                          id="web-dev-tab"
-                          data-toggle="tab"
-                          href="#web-dev"
-                          role="tab"
-                          >Web Development</a
-                        >
+                        <a class="nav-link active" id="web-dev-tab" data-toggle="tab" href="#web-dev" role="tab">Web Development</a>
                       </li>
                       <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="digital-marketing-tab"
-                          data-toggle="tab"
-                          href="#digital-marketing"
-                          role="tab"
-                          >Digital Marketing</a
-                        >
+                        <a class="nav-link" id="digital-marketing-tab" data-toggle="tab" href="#digital-marketing" role="tab">Digital Marketing</a>
                       </li>
                       <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="mobile-app-tab"
-                          data-toggle="tab"
-                          href="#mobile-app"
-                          role="tab"
-                          >Mobile Apps</a
-                        >
+                        <a class="nav-link" id="mobile-app-tab" data-toggle="tab" href="#mobile-app" role="tab">Mobile Apps</a>
                       </li>
                       <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="logo-design-tab"
-                          data-toggle="tab"
-                          href="#logo-design"
-                          role="tab"
-                          >Logo Design</a
-                        >
+                        <a class="nav-link" id="logo-design-tab" data-toggle="tab" href="#logo-design" role="tab">Logo Design</a>
                       </li>
                       <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="video-editing-tab"
-                          data-toggle="tab"
-                          href="#video-editing"
-                          role="tab"
-                          >Video Editing</a
-                        >
+                        <a class="nav-link" id="video-editing-tab" data-toggle="tab" href="#video-editing" role="tab">Video Editing</a>
                       </li>
                       <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="seo-tab"
-                          data-toggle="tab"
-                          href="#seo"
-                          role="tab"
-                          >SEO</a
-                        >
+                        <a class="nav-link" id="seo-tab" data-toggle="tab" href="#seo" role="tab">SEO</a>
                       </li>
                     </ul>
 
-                    <div
-                      class="tab-content sub-tab-content"
-                      id="servicesTabContent"
-                    >
-                      <div
-                        class="tab-pane fade show active"
-                        id="web-dev"
-                        role="tabpanel"
-                      >
+                    <div class="tab-content sub-tab-content" id="servicesTabContent">
+                      <div class="tab-pane fade show active" id="web-dev" role="tabpanel">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="service_content">
@@ -837,27 +777,24 @@
                           <div class="col-md-6">
                             <div class="service_image">
                               <img
-                                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60"
+                                data-src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60"
                                 alt="Web Development"
+                                loading="lazy"
                               />
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="tab-pane fade"
-                        id="digital-marketing"
-                        role="tabpanel"
-                      >
+                      <div class="tab-pane fade" id="digital-marketing" role="tabpanel">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="service_content">
-                              <h3>Digital Marketing & SEO</h3>
+                              <h3>Digital Marketing</h3>
                               <p>
-                                Boost your online visibility with our digital
-                                marketing strategies and SEO optimization. Drive
-                                organic traffic, improve rankings, and increase
-                                conversions.
+                                We help businesses grow their online presence
+                                through effective digital marketing strategies.
+                                From SEO to social media marketing, we deliver
+                                results that drive real business growth.
                               </p>
                               <ul class="service_features">
                                 <li>Search Engine Optimization</li>
@@ -870,105 +807,99 @@
                           <div class="col-md-6">
                             <div class="service_image">
                               <img
-                                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&auto=format&fit=crop&q=60"
+                                data-src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&auto=format&fit=crop&q=60"
                                 alt="Digital Marketing"
+                                loading="lazy"
                               />
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="tab-pane fade"
-                        id="mobile-app"
-                        role="tabpanel"
-                      >
+                      <div class="tab-pane fade" id="mobile-app" role="tabpanel">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="service_content">
-                              <h3>Mobile App Development</h3>
+                              <h3>Mobile Apps</h3>
                               <p>
-                                Native and cross-platform mobile applications
-                                for iOS and Android. User-centric design with
-                                seamless functionality and optimal performance.
+                                We create custom mobile applications that
+                                engage users and drive business growth. Our apps
+                                are designed for both iOS and Android platforms.
                               </p>
                               <ul class="service_features">
-                                <li>iOS Development</li>
-                                <li>Android Development</li>
-                                <li>Cross-Platform Apps</li>
+                                <li>iOS & Android Development</li>
                                 <li>App Store Optimization</li>
+                                <li>Push Notifications</li>
+                                <li>In-App Purchases</li>
                               </ul>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="service_image">
                               <img
-                                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&auto=format&fit=crop&q=60"
-                                alt="Mobile App Development"
+                                data-src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&auto=format&fit=crop&q=60"
+                                alt="Mobile Apps"
+                                loading="lazy"
                               />
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="tab-pane fade"
-                        id="logo-design"
-                        role="tabpanel"
-                      >
+                      <div class="tab-pane fade" id="logo-design" role="tabpanel">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="service_content">
                               <h3>Logo Design</h3>
                               <p>
-                                Professional logo design that captures your
-                                brand identity. Creative and memorable designs
-                                that make your business stand out in the market.
+                                We create custom logos that represent your brand
+                                perfectly. Our professional designers will work
+                                with you to develop a logo that stands out and
+                                communicates your brand identity.
                               </p>
                               <ul class="service_features">
-                                <li>Brand Identity Design</li>
-                                <li>Logo Creation</li>
-                                <li>Brand Guidelines</li>
-                                <li>Print & Digital Assets</li>
+                                <li>Custom Logo Design</li>
+                                <li>Brand Identity Systems</li>
+                                <li>Business Card Design</li>
+                                <li>Stationery Design</li>
                               </ul>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="service_image">
                               <img
-                                src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&auto=format&fit=crop&q=60"
+                                data-src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&auto=format&fit=crop&q=60"
                                 alt="Logo Design"
+                                loading="lazy"
                               />
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="tab-pane fade"
-                        id="video-editing"
-                        role="tabpanel"
-                      >
+                      <div class="tab-pane fade" id="video-editing" role="tabpanel">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="service_content">
                               <h3>Video Editing</h3>
                               <p>
-                                Professional video editing services for
-                                marketing content, promotional videos, and
-                                social media. Engaging visual storytelling that
-                                captivates your audience.
+                                We produce high-quality video content that
+                                engages your audience and tells your brand's
+                                story. From corporate videos to social media
+                                clips, we have the skills to create compelling
+                                visuals.
                               </p>
                               <ul class="service_features">
-                                <li>Promotional Videos</li>
-                                <li>Social Media Content</li>
-                                <li>Corporate Videos</li>
-                                <li>Motion Graphics</li>
+                                <li>Video Production</li>
+                                <li>Video Editing</li>
+                                <li>Video Post-Production</li>
+                                <li>Animation & Motion Graphics</li>
                               </ul>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="service_image">
                               <img
-                                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=500&auto=format&fit=crop&q=60"
+                                data-src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&auto=format&fit=crop&q=60"
                                 alt="Video Editing"
+                                loading="lazy"
                               />
                             </div>
                           </div>
@@ -978,26 +909,27 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="service_content">
-                              <h3>Search Engine Optimization</h3>
+                              <h3>SEO Services</h3>
                               <p>
-                                Comprehensive SEO strategies to improve your
-                                website's visibility and ranking on search
-                                engines. Drive organic traffic and increase
-                                online presence.
+                                We help businesses improve their search engine
+                                rankings and drive more organic traffic to their
+                                websites. Our SEO strategies are designed to
+                                increase visibility and boost online presence.
                               </p>
                               <ul class="service_features">
                                 <li>Keyword Research</li>
-                                <li>On-Page Optimization</li>
-                                <li>Technical SEO</li>
-                                <li>Link Building</li>
+                                <li>On-Page SEO</li>
+                                <li>Off-Page SEO</li>
+                                <li>Local SEO</li>
                               </ul>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="service_image">
                               <img
-                                src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&auto=format&fit=crop&q=60"
-                                alt="Search Engine Optimization"
+                                data-src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&auto=format&fit=crop&q=60"
+                                alt="SEO Services"
+                                loading="lazy"
                               />
                             </div>
                           </div>
@@ -1006,1590 +938,15 @@
                     </div>
                   </div>
                 </div>
-
                 <!-- Portfolio Tab Content -->
                 <div class="tab-pane fade" id="portfolio-main" role="tabpanel">
-                  <div class="portfolio_sub_tabs">
-                    <ul
-                      class="nav nav-tabs sub-nav-tabs"
-                      id="portfolioTabs"
-                      role="tablist"
-                    >
-                      <li class="nav-item">
-                        <a
-                          class="nav-link active"
-                          id="all-portfolio-tab"
-                          data-toggle="tab"
-                          href="#all-portfolio"
-                          role="tab"
-                          >All Projects</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="web-portfolio-tab"
-                          data-toggle="tab"
-                          href="#web-portfolio"
-                          role="tab"
-                          >Web Development</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="app-portfolio-tab"
-                          data-toggle="tab"
-                          href="#app-portfolio"
-                          role="tab"
-                          >Mobile Apps</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="design-portfolio-tab"
-                          data-toggle="tab"
-                          href="#design-portfolio"
-                          role="tab"
-                          >Design</a
-                        >
-                      </li>
-                    </ul>
-
-                    <div
-                      class="tab-content sub-tab-content"
-                      id="portfolioTabContent"
-                    >
-                      <div
-                        class="tab-pane fade show active"
-                        id="all-portfolio"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/portfolio1.png"
-                                  alt="TechStore E-commerce"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/portfolio2.png"
-                                  alt="FitTracker Pro"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/portfolio3.webp"
-                                  alt="QuickEats Delivery"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/portfolio4.png"
-                                  alt="Learning Management System"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/portfolio5.png"
-                                  alt="SecureBank Mobile"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/portfolio6.jpg"
-                                  alt="Bella Vista Restaurant"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="web-portfolio"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/4.png"
-                                  alt="TechStore E-commerce"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/8.png"
-                                  alt="Learning Management System"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/portfolio3.webp"
-                                  alt="Healthcare Portal"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/12.png"
-                                  alt="Bella Vista Restaurant"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="app-portfolio"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/portfolio8.png"
-                                  alt="FitTracker Pro"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/2t.png"
-                                  alt="QuickEats Delivery"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="/images/3t.png"
-                                  alt="SecureBank Mobile"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="design-portfolio"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&auto=format&fit=crop&q=60"
-                                  alt="Fashion Brand Logo"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&auto=format&fit=crop&q=60"
-                                  alt="Tech Startup Branding"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="portfolio_box">
-                              <figure>
-                                <img
-                                  src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=400&auto=format&fit=crop&q=60"
-                                  alt="Restaurant Brand Identity"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <h3>Our Portfolio</h3>
+                  <p>View our amazing work and successful projects.</p>
                 </div>
-
                 <!-- Packages Tab Content -->
                 <div class="tab-pane fade" id="packages-main" role="tabpanel">
-                  <div class="packages_sub_tabs">
-                    <ul
-                      class="nav nav-tabs sub-nav-tabs"
-                      id="packagesTabs"
-                      role="tablist"
-                    >
-                      <li class="nav-item">
-                        <a
-                          class="nav-link active"
-                          id="web-packages-tab"
-                          data-toggle="tab"
-                          href="#web-packages"
-                          role="tab"
-                          >Web Development</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="marketing-packages-tab"
-                          data-toggle="tab"
-                          href="#marketing-packages"
-                          role="tab"
-                          >Digital Marketing</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="app-packages-tab"
-                          data-toggle="tab"
-                          href="#app-packages"
-                          role="tab"
-                          >Mobile Apps</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="design-packages-tab"
-                          data-toggle="tab"
-                          href="#design-packages"
-                          role="tab"
-                          >Logo Design</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="video-packages-tab"
-                          data-toggle="tab"
-                          href="#video-packages"
-                          role="tab"
-                          >Video Editing</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="seo-packages-tab"
-                          data-toggle="tab"
-                          href="#seo-packages"
-                          role="tab"
-                          >SEO Services</a
-                        >
-                      </li>
-                    </ul>
-
-                    <div
-                      class="tab-content sub-tab-content"
-                      id="packagesTabContent"
-                    >
-                      <!-- Web Development Packages -->
-                      <div
-                        class="tab-pane fade show active"
-                        id="web-packages"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>Basic Website</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">499</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> 5-Page Website
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Responsive Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic SEO Setup
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Contact Form
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 5-Page Website
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Responsive Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic SEO Setup
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Contact Form
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 5-Page Website
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Responsive Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic SEO Setup
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Contact Form
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 5-Page Website
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Responsive Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic SEO Setup
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Contact Form
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 5-Page Website
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Responsive Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic SEO Setup
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Contact Form
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 5-Page Website
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Responsive Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic SEO Setup
-                                  <i class="fa fa-check"></i> 1 Month Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card featured">
-                              <div class="package_badge">Most Popular</div>
-                              <div class="package_header">
-                                <h3>Business Website</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">1,299</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> 10-Page Website
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> E-commerce Ready
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Advanced SEO
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> CMS Integration
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 3 Months Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card premium">
-                              <div class="package_badge">Enterprise</div>
-                              <div class="package_header">
-                                <h3>Enterprise Website</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">4,999</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Unlimited Pages
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Custom Development
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Advanced Security
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Performance
-                                  Optimization
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 12 Months Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Digital Marketing Packages -->
-                      <div
-                        class="tab-pane fade"
-                        id="marketing-packages"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>Starter Marketing</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">399</span>
-                                  <span class="period">/month</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Social Media
-                                  Management
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Content Creation
-                                  (8 posts)
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic Analytics
-                                </li>
-                                <li><i class="fa fa-check"></i> 2 Platforms</li>
-                                <li>
-                                  <i class="fa fa-check"></i> Monthly Reports
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card featured">
-                              <div class="package_badge">Most Popular</div>
-                              <div class="package_header">
-                                <h3>Professional Marketing</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">799</span>
-                                  <span class="period">/month</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Full Social Media
-                                  Management
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Google Ads
-                                  Campaign
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Content Creation
-                                  (20 posts)
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Email Marketing
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Advanced Analytics
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card premium">
-                              <div class="package_badge">Enterprise</div>
-                              <div class="package_header">
-                                <h3>Full Marketing Suite</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">1,999</span>
-                                  <span class="period">/month</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> All Marketing
-                                  Channels
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Dedicated Account
-                                  Manager
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Custom Campaign
-                                  Strategy
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Weekly Strategy
-                                  Calls
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Priority Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Mobile App Packages -->
-                      <div
-                        class="tab-pane fade"
-                        id="app-packages"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>Simple App</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">2,999</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Single Platform
-                                  (iOS or Android)
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic UI/UX Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 5 Core Features
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> App Store
-                                  Submission
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 3 Months Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card featured">
-                              <div class="package_badge">Most Popular</div>
-                              <div class="package_header">
-                                <h3>Cross-Platform App</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">5,999</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> iOS & Android
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Custom Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> API Integration
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Push Notifications
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 6 Months Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card premium">
-                              <div class="package_badge">Enterprise</div>
-                              <div class="package_header">
-                                <h3>Enterprise App</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">12,999</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Native iOS &
-                                  Android
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Advanced Features
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Backend
-                                  Development
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Admin Dashboard
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 12 Months Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Logo Design Packages -->
-                      <div
-                        class="tab-pane fade"
-                        id="design-packages"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>Basic Logo</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">199</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> 3 Logo Concepts
-                                </li>
-                                <li><i class="fa fa-check"></i> 2 Revisions</li>
-                                <li>
-                                  <i class="fa fa-check"></i> Vector Files (AI,
-                                  EPS)
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> PNG & JPG Files
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 48hr Delivery
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card featured">
-                              <div class="package_badge">Most Popular</div>
-                              <div class="package_header">
-                                <h3>Professional Logo</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">399</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> 5 Logo Concepts
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Unlimited
-                                  Revisions
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> All File Formats
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Brand Guidelines
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 24hr Delivery
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card premium">
-                              <div class="package_badge">Complete Brand</div>
-                              <div class="package_header">
-                                <h3>Brand Identity</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">999</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Complete Brand
-                                  Identity
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Business Card
-                                  Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Letterhead &
-                                  Envelope
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Social Media Kit
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Brand Style Guide
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Video Editing Packages -->
-                      <div
-                        class="tab-pane fade"
-                        id="video-packages"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>Basic Video Edit</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">299</span>
-                                  <span class="period">per video</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Up to 3 Minutes
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic Cuts &
-                                  Transitions
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Color Correction
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Audio Enhancement
-                                </li>
-                                <li><i class="fa fa-check"></i> 2 Revisions</li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card featured">
-                              <div class="package_badge">Most Popular</div>
-                              <div class="package_header">
-                                <h3>Professional Video</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">599</span>
-                                  <span class="period">per video</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Up to 10 Minutes
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Advanced Effects
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Motion Graphics
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Professional Audio
-                                  Mix
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Unlimited
-                                  Revisions
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card premium">
-                              <div class="package_badge">Premium</div>
-                              <div class="package_header">
-                                <h3>Cinematic Video</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">1,299</span>
-                                  <span class="period">per video</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Unlimited Length
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 3D Animation
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Custom Graphics
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Professional
-                                  Voiceover
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Multiple Formats
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- SEO Services Packages -->
-                      <div
-                        class="tab-pane fade"
-                        id="seo-packages"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>SEO Starter</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">299</span>
-                                  <span class="period">/month</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Keyword Research
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> On-Page SEO (5
-                                  pages)
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Monthly Reports
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Google Analytics
-                                  Setup
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 3 Month Minimum
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card featured">
-                              <div class="package_badge">Most Popular</div>
-                              <div class="package_header">
-                                <h3>SEO Professional</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">599</span>
-                                  <span class="period">/month</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Advanced Keyword
-                                  Research
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> On-Page SEO (15
-                                  pages)
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Link Building
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Content
-                                  Optimization
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Bi-weekly Reports
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card premium">
-                              <div class="package_badge">Enterprise</div>
-                              <div class="package_header">
-                                <h3>SEO Enterprise</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">1,299</span>
-                                  <span class="period">/month</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Comprehensive SEO
-                                  Strategy
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Unlimited Page
-                                  Optimization
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Advanced Link
-                                  Building
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Technical SEO
-                                  Audit
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Weekly Reports &
-                                  Calls
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div
-                        class="tab-pane fade"
-                        id="custom-package"
-                        role="tabpanel"
-                      >
-                        <div class="row justify-content-center">
-                          <div class="col-md-8">
-                            <div class="custom_package_content">
-                              <div class="text-center">
-                                <h3>Custom Solutions</h3>
-                                <p>
-                                  Need something specific? We create tailored
-                                  solutions for your unique business
-                                  requirements.
-                                </p>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="custom_feature">
-                                    <i class="fa fa-cogs"></i>
-                                    <h4>Tailored Development</h4>
-                                    <p>
-                                      Custom web applications, integrations, and
-                                      specialized functionality built to your
-                                      exact specifications.
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="custom_feature">
-                                    <i class="fa fa-users"></i>
-                                    <h4>Dedicated Team</h4>
-                                    <p>
-                                      A dedicated team of developers, designers,
-                                      and project managers working exclusively
-                                      on your project.
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="custom_feature">
-                                    <i class="fa fa-clock-o"></i>
-                                    <h4>Flexible Timeline</h4>
-                                    <p>
-                                      Project timelines adapted to your business
-                                      needs and launch requirements.
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="custom_feature">
-                                    <i class="fa fa-shield"></i>
-                                    <h4>Enterprise Security</h4>
-                                    <p>
-                                      Advanced security measures, compliance
-                                      requirements, and data protection
-                                      protocols.
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="text-center custom_cta">
-                                <h4>Ready to discuss your project?</h4>
-                                <p>
-                                  Let's schedule a consultation to understand
-                                  your requirements and provide a custom quote.
-                                </p>
-                                <a href="#contact" class="package_btn large"
-                                  >Schedule Consultation</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Packages Tab Content -->
-                <div class="tab-pane fade" id="packages-main" role="tabpanel">
-                  <div class="packages_sub_tabs">
-                    <ul
-                      class="nav nav-tabs sub-nav-tabs"
-                      id="packagesTabs"
-                      role="tablist"
-                    >
-                      <li class="nav-item">
-                        <a
-                          class="nav-link active"
-                          id="starter-package-tab"
-                          data-toggle="tab"
-                          href="#starter-package"
-                          role="tab"
-                          >Starter</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="professional-package-tab"
-                          data-toggle="tab"
-                          href="#professional-package"
-                          role="tab"
-                          >Professional</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="enterprise-package-tab"
-                          data-toggle="tab"
-                          href="#enterprise-package"
-                          role="tab"
-                          >Enterprise</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          id="custom-package-tab"
-                          data-toggle="tab"
-                          href="#custom-package"
-                          role="tab"
-                          >Custom</a
-                        >
-                      </li>
-                    </ul>
-
-                    <div
-                      class="tab-content sub-tab-content"
-                      id="packagesTabContent"
-                    >
-                      <div
-                        class="tab-pane fade show active"
-                        id="starter-package"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>Basic Website</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">499</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> 5-Page Website
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Responsive Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Basic SEO Setup
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Contact Form
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 1 Month Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>Logo Design</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">199</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> 3 Logo Concepts
-                                </li>
-                                <li><i class="fa fa-check"></i> 2 Revisions</li>
-                                <li>
-                                  <i class="fa fa-check"></i> Vector Files
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Brand Guidelines
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 48hr Delivery
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>SEO Starter</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">299</span>
-                                  <span class="period">/month</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Keyword Research
-                                </li>
-                                <li><i class="fa fa-check"></i> On-Page SEO</li>
-                                <li>
-                                  <i class="fa fa-check"></i> Monthly Reports
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Google Analytics
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 3 Month Minimum
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div
-                        class="tab-pane fade"
-                        id="professional-package"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="package_card featured">
-                              <div class="package_badge">Most Popular</div>
-                              <div class="package_header">
-                                <h3>Business Website</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">1,299</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> 10-Page Website
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> E-commerce Ready
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Advanced SEO
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> CMS Integration
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 3 Months Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>Mobile App</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">2,999</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> iOS & Android
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Custom Design
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> API Integration
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> App Store Upload
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 6 Months Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card">
-                              <div class="package_header">
-                                <h3>Digital Marketing</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">799</span>
-                                  <span class="period">/month</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Social Media
-                                  Management
-                                </li>
-                                <li><i class="fa fa-check"></i> Google Ads</li>
-                                <li>
-                                  <i class="fa fa-check"></i> Content Creation
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Analytics &
-                                  Reports
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 6 Month Minimum
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div
-                        class="tab-pane fade"
-                        id="enterprise-package"
-                        role="tabpanel"
-                      >
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="package_card premium">
-                              <div class="package_badge">Enterprise</div>
-                              <div class="package_header">
-                                <h3>Enterprise Website</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">4,999</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Unlimited Pages
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Custom Development
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Advanced Security
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Performance
-                                  Optimization
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> 12 Months Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card premium">
-                              <div class="package_header">
-                                <h3>Complete Branding</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">1,999</span>
-                                  <span class="period">one-time</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> Logo & Brand
-                                  Identity
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Business Cards
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Marketing
-                                  Materials
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Brand Guidelines
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Unlimited
-                                  Revisions
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="package_card premium">
-                              <div class="package_header">
-                                <h3>Full Marketing</h3>
-                                <div class="package_price">
-                                  <span class="currency">$</span>
-                                  <span class="amount">1,999</span>
-                                  <span class="period">/month</span>
-                                </div>
-                              </div>
-                              <ul class="package_features">
-                                <li>
-                                  <i class="fa fa-check"></i> All Marketing
-                                  Channels
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Dedicated Manager
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Weekly Strategy
-                                  Calls
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Custom Campaigns
-                                </li>
-                                <li>
-                                  <i class="fa fa-check"></i> Priority Support
-                                </li>
-                              </ul>
-                              <a href="#contact" class="package_btn"
-                                >Get Started</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div
-                        class="tab-pane fade"
-                        id="custom-package"
-                        role="tabpanel"
-                      >
-                        <div class="row justify-content-center">
-                          <div class="col-md-8">
-                            <div class="custom_package_content">
-                              <div class="text-center">
-                                <h3>Custom Solutions</h3>
-                                <p>
-                                  Need something specific? We create tailored
-                                  solutions for your unique business
-                                  requirements.
-                                </p>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="custom_feature">
-                                    <i class="fa fa-cogs"></i>
-                                    <h4>Tailored Development</h4>
-                                    <p>
-                                      Custom web applications, integrations, and
-                                      specialized functionality built to your
-                                      exact specifications.
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="custom_feature">
-                                    <i class="fa fa-users"></i>
-                                    <h4>Dedicated Team</h4>
-                                    <p>
-                                      A dedicated team of developers, designers,
-                                      and project managers working exclusively
-                                      on your project.
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="custom_feature">
-                                    <i class="fa fa-clock-o"></i>
-                                    <h4>Flexible Timeline</h4>
-                                    <p>
-                                      Project timelines adapted to your business
-                                      needs and launch requirements.
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="custom_feature">
-                                    <i class="fa fa-shield"></i>
-                                    <h4>Enterprise Security</h4>
-                                    <p>
-                                      Advanced security measures, compliance
-                                      requirements, and data protection
-                                      protocols.
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="text-center custom_cta">
-                                <h4>Ready to discuss your project?</h4>
-                                <p>
-                                  Let's schedule a consultation to understand
-                                  your requirements and provide a custom quote.
-                                </p>
-                                <a href="#contact" class="package_btn large"
-                                  >Schedule Consultation</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <h3>Our Packages</h3>
+                  <p>Choose from our affordable service packages.</p>
                 </div>
               </div>
             </div>
@@ -2722,13 +1079,16 @@
                         <a href="tel:+447716487602">
                           <i class="fa fa-phone" aria-hidden="true"></i>
                         </a>
-                        UK: <a href="tel:+447716487602">+44 771 648 7602</a> | USA: <a href="tel:+13323731192">+1 332 373 1192</a>
+                        UK: <a href="tel:+447716487602">+44 771 648 7602</a> |
+                        USA: <a href="tel:+13323731192">+1 332 373 1192</a>
                       </li>
                       <li>
                         <a href="mailto:services@streamartisan.com">
                           <i class="fa fa-envelope" aria-hidden="true"></i>
                         </a>
-                        <a href="mailto:services@streamartisan.com">services@streamartisan.com</a>
+                        <a href="mailto:services@streamartisan.com"
+                          >services@streamartisan.com</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -2757,11 +1117,16 @@
             <div class="col-md-6 padding_right2">
               <div class="map_section">
                 <div class="map-responsive">
-                                <iframe
+                  <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.543729340494!2d-0.4159684842530892!3d51.87874097972474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876509671c948d7%3A0x2c4d0b85b8c0c0c0!2sLuton%2C%20UK!5e0!3m2!1sen!2sus!4v1635959655180!5m2!1sen!2sus"
                     width="100%"
                     height="500"
-                    style="border: 0; width: 100%; height: 500px; border-radius: 15px;"
+                    style="
+                      border: 0;
+                      width: 100%;
+                      height: 500px;
+                      border-radius: 15px;
+                    "
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
@@ -2858,7 +1223,7 @@
       </div> -->
     <!-- end testimonial section -->
     <!--  footer -->
-     <footer>
+    <footer>
       <div class="footer">
         <div class="container">
           <div class="row">
@@ -2880,21 +1245,25 @@
                     <a href="mailto:services@streamartisan.com">
                       <i class="fa fa-envelope" aria-hidden="true"></i>
                     </a>
-                    <a href="mailto:services@streamartisan.com">services@streamartisan.com</a>
+                    <a href="mailto:services@streamartisan.com"
+                      >services@streamartisan.com</a
+                    >
                   </li>
                   <li>
                     <strong>UK Office:</strong><br />
                     <a href="tel:+447716487602">
-                      <i class="fa fa-phone" aria-hidden="true"></i> +44 771 648 7602
-                    </a><br />
+                      <i class="fa fa-phone" aria-hidden="true"></i> +44 771 648
+                      7602 </a
+                    ><br />
                     Office No.50A, 5 The Shires Old<br />
                     Bedford Road Luton, England LU27QA
                   </li>
                   <li>
                     <strong>USA Office:</strong><br />
                     <a href="tel:+13323731192">
-                      <i class="fa fa-phone" aria-hidden="true"></i> +1 332 373 1192
-                    </a><br />
+                      <i class="fa fa-phone" aria-hidden="true"></i> +1 332 373
+                      1192 </a
+                    ><br />
                     Stream Artisan Corporation 418<br />
                     Broadway #5981 Albany, NY, 12207
                   </li>
@@ -2943,9 +1312,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <p>
-                  © 2024 Stream Artisan. All Rights Reserved.
-                </p>
+                <p>© 2024 Stream Artisan. All Rights Reserved.</p>
               </div>
             </div>
           </div>
@@ -2962,6 +1329,8 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/form-handler.js"></script>
+    <script src="js/image-optimization.js"></script>
+
     <script>
       function openNav() {
         document.getElementById("mySidepanel").style.width = "250px";
